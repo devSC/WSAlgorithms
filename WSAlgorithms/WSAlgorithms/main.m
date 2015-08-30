@@ -5,12 +5,13 @@
 //  Created by Wilson-Yuan on 15/8/30.
 //  Copyright (c) 2015年 wilson-yuan. All rights reserved.
 //
+#include <stdio.h>
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+//快速排序
+void quicksorts(int left, int right) {
+    printf("%d %d", left, right);
+}
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+int main(int argc, const char * argv[]) {
+    quicksorts(2, 5);
 }

@@ -7,50 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE6427A11B9354940067405D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6427A01B9354940067405D /* main.m */; };
-		FE6427A41B9354940067405D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6427A31B9354940067405D /* AppDelegate.m */; };
-		FE6427A71B9354940067405D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6427A61B9354940067405D /* ViewController.m */; };
-		FE6427AA1B9354940067405D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6427A81B9354940067405D /* Main.storyboard */; };
-		FE6427AC1B9354940067405D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6427AB1B9354940067405D /* Images.xcassets */; };
-		FE6427AF1B9354940067405D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6427AD1B9354940067405D /* LaunchScreen.xib */; };
-		FE6427BB1B9354940067405D /* WSAlgorithmsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6427BA1B9354940067405D /* WSAlgorithmsTests.m */; };
+		FE6427D11B935C550067405D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6427D01B935C550067405D /* main.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE6427B51B9354940067405D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE6427931B9354940067405D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE64279A1B9354940067405D;
-			remoteInfo = WSAlgorithms;
+/* Begin PBXCopyFilesBuildPhase section */
+		FE6427CB1B935C550067405D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FE64279B1B9354940067405D /* WSAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE64279F1B9354940067405D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE6427A01B9354940067405D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FE6427A21B9354940067405D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FE6427A31B9354940067405D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FE6427A51B9354940067405D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FE6427A61B9354940067405D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FE6427A91B9354940067405D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FE6427AB1B9354940067405D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FE6427AE1B9354940067405D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FE6427B41B9354940067405D /* WSAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE6427B91B9354940067405D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE6427BA1B9354940067405D /* WSAlgorithmsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAlgorithmsTests.m; sourceTree = "<group>"; };
+		FE6427CD1B935C550067405D /* WSAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WSAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6427D01B935C550067405D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FE6427981B9354940067405D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE6427B11B9354940067405D /* Frameworks */ = {
+		FE6427CA1B935C550067405D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,75 +38,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE6427921B9354940067405D = {
+		FE6427C41B935C550067405D = {
 			isa = PBXGroup;
 			children = (
-				FE64279D1B9354940067405D /* WSAlgorithms */,
-				FE6427B71B9354940067405D /* WSAlgorithmsTests */,
-				FE64279C1B9354940067405D /* Products */,
+				FE6427CF1B935C550067405D /* WSAlgorithms */,
+				FE6427CE1B935C550067405D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FE64279C1B9354940067405D /* Products */ = {
+		FE6427CE1B935C550067405D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE64279B1B9354940067405D /* WSAlgorithms.app */,
-				FE6427B41B9354940067405D /* WSAlgorithmsTests.xctest */,
+				FE6427CD1B935C550067405D /* WSAlgorithms */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE64279D1B9354940067405D /* WSAlgorithms */ = {
+		FE6427CF1B935C550067405D /* WSAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				FE6427A21B9354940067405D /* AppDelegate.h */,
-				FE6427A31B9354940067405D /* AppDelegate.m */,
-				FE6427A51B9354940067405D /* ViewController.h */,
-				FE6427A61B9354940067405D /* ViewController.m */,
-				FE6427A81B9354940067405D /* Main.storyboard */,
-				FE6427AB1B9354940067405D /* Images.xcassets */,
-				FE6427AD1B9354940067405D /* LaunchScreen.xib */,
-				FE64279E1B9354940067405D /* Supporting Files */,
+				FE6427D01B935C550067405D /* main.m */,
 			);
 			path = WSAlgorithms;
-			sourceTree = "<group>";
-		};
-		FE64279E1B9354940067405D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE64279F1B9354940067405D /* Info.plist */,
-				FE6427A01B9354940067405D /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FE6427B71B9354940067405D /* WSAlgorithmsTests */ = {
-			isa = PBXGroup;
-			children = (
-				FE6427BA1B9354940067405D /* WSAlgorithmsTests.m */,
-				FE6427B81B9354940067405D /* Supporting Files */,
-			);
-			path = WSAlgorithmsTests;
-			sourceTree = "<group>";
-		};
-		FE6427B81B9354940067405D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE6427B91B9354940067405D /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE64279A1B9354940067405D /* WSAlgorithms */ = {
+		FE6427CC1B935C550067405D /* WSAlgorithms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE6427BE1B9354940067405D /* Build configuration list for PBXNativeTarget "WSAlgorithms" */;
+			buildConfigurationList = FE6427D41B935C550067405D /* Build configuration list for PBXNativeTarget "WSAlgorithms" */;
 			buildPhases = (
-				FE6427971B9354940067405D /* Sources */,
-				FE6427981B9354940067405D /* Frameworks */,
-				FE6427991B9354940067405D /* Resources */,
+				FE6427C91B935C550067405D /* Sources */,
+				FE6427CA1B935C550067405D /* Frameworks */,
+				FE6427CB1B935C550067405D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -136,134 +79,53 @@
 			);
 			name = WSAlgorithms;
 			productName = WSAlgorithms;
-			productReference = FE64279B1B9354940067405D /* WSAlgorithms.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FE6427B31B9354940067405D /* WSAlgorithmsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE6427C11B9354940067405D /* Build configuration list for PBXNativeTarget "WSAlgorithmsTests" */;
-			buildPhases = (
-				FE6427B01B9354940067405D /* Sources */,
-				FE6427B11B9354940067405D /* Frameworks */,
-				FE6427B21B9354940067405D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE6427B61B9354940067405D /* PBXTargetDependency */,
-			);
-			name = WSAlgorithmsTests;
-			productName = WSAlgorithmsTests;
-			productReference = FE6427B41B9354940067405D /* WSAlgorithmsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = FE6427CD1B935C550067405D /* WSAlgorithms */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FE6427931B9354940067405D /* Project object */ = {
+		FE6427C51B935C550067405D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "wilson-yuan";
 				TargetAttributes = {
-					FE64279A1B9354940067405D = {
+					FE6427CC1B935C550067405D = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					FE6427B31B9354940067405D = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = FE64279A1B9354940067405D;
 					};
 				};
 			};
-			buildConfigurationList = FE6427961B9354940067405D /* Build configuration list for PBXProject "WSAlgorithms" */;
+			buildConfigurationList = FE6427C81B935C550067405D /* Build configuration list for PBXProject "WSAlgorithms" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = FE6427921B9354940067405D;
-			productRefGroup = FE64279C1B9354940067405D /* Products */;
+			mainGroup = FE6427C41B935C550067405D;
+			productRefGroup = FE6427CE1B935C550067405D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE64279A1B9354940067405D /* WSAlgorithms */,
-				FE6427B31B9354940067405D /* WSAlgorithmsTests */,
+				FE6427CC1B935C550067405D /* WSAlgorithms */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		FE6427991B9354940067405D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE6427AA1B9354940067405D /* Main.storyboard in Resources */,
-				FE6427AF1B9354940067405D /* LaunchScreen.xib in Resources */,
-				FE6427AC1B9354940067405D /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE6427B21B9354940067405D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		FE6427971B9354940067405D /* Sources */ = {
+		FE6427C91B935C550067405D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6427A71B9354940067405D /* ViewController.m in Sources */,
-				FE6427A41B9354940067405D /* AppDelegate.m in Sources */,
-				FE6427A11B9354940067405D /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE6427B01B9354940067405D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE6427BB1B9354940067405D /* WSAlgorithmsTests.m in Sources */,
+				FE6427D11B935C550067405D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FE6427B61B9354940067405D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FE64279A1B9354940067405D /* WSAlgorithms */;
-			targetProxy = FE6427B51B9354940067405D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FE6427A81B9354940067405D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE6427A91B9354940067405D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FE6427AD1B9354940067405D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE6427AE1B9354940067405D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		FE6427BC1B9354940067405D /* Debug */ = {
+		FE6427D21B935C550067405D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,9 +142,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -299,15 +160,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		FE6427BD1B9354940067405D /* Release */ = {
+		FE6427D31B935C550067405D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,7 +184,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -337,97 +196,47 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		FE6427BF1B9354940067405D /* Debug */ = {
+		FE6427D51B935C550067405D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WSAlgorithms/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FE6427C01B9354940067405D /* Release */ = {
+		FE6427D61B935C550067405D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WSAlgorithms/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FE6427C21B9354940067405D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WSAlgorithmsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSAlgorithms.app/WSAlgorithms";
-			};
-			name = Debug;
-		};
-		FE6427C31B9354940067405D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WSAlgorithmsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSAlgorithms.app/WSAlgorithms";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE6427961B9354940067405D /* Build configuration list for PBXProject "WSAlgorithms" */ = {
+		FE6427C81B935C550067405D /* Build configuration list for PBXProject "WSAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE6427BC1B9354940067405D /* Debug */,
-				FE6427BD1B9354940067405D /* Release */,
+				FE6427D21B935C550067405D /* Debug */,
+				FE6427D31B935C550067405D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE6427BE1B9354940067405D /* Build configuration list for PBXNativeTarget "WSAlgorithms" */ = {
+		FE6427D41B935C550067405D /* Build configuration list for PBXNativeTarget "WSAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE6427BF1B9354940067405D /* Debug */,
-				FE6427C01B9354940067405D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		FE6427C11B9354940067405D /* Build configuration list for PBXNativeTarget "WSAlgorithmsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE6427C21B9354940067405D /* Debug */,
-				FE6427C31B9354940067405D /* Release */,
+				FE6427D51B935C550067405D /* Debug */,
+				FE6427D61B935C550067405D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FE6427931B9354940067405D /* Project object */;
+	rootObject = FE6427C51B935C550067405D /* Project object */;
 }

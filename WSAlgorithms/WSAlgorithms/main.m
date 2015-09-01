@@ -8,54 +8,6 @@
 #include <stdio.h>
 
 int a[101], n; //
-//快速排序
-void quicksorts(int left, int right) {
-//    printf("%d %d", left, right);
-    
-    int i, j, t, temp;
-    
-    if (left > right) {
-        return;
-    }
-    
-    temp = a[left]; //temp中存的就是基数
-    i = left;
-    j = right;
-    while (i != j) {
-        
-        //顺序很重要, 先从右向左
-        while (a[j] >= temp && i < j) {
-            j--;
-        }
-        
-        while (a[i]<= temp && i < j) {
-            i++;
-        }
-        
-        //交换两个数在数组中的位置
-        
-        if (i < j) { //当哨兵i和哨兵j没有相遇时,
-            
-            t = a[i];
-            a[i] = a[j];
-            
-            a[j] = t;
-            
-        }
-        printf("a[%d]: %d a[%d]: %d", i, a[i], j, a[j]);
-    }
-    
-    //最终,将基数归位
-    a[left] = a[i];
-    a[i] = temp;
-    
-    quicksorts(left, i - 1); //继续处理左边 这是递归过程
-    quicksorts(i + 1, right);//继续处理右边 这是递归过程
-    
-    return;
-}
-
-
 
 void sort(int *a, int left, int right)
 {
@@ -97,6 +49,50 @@ void sort(int *a, int left, int right)
 }
 
 
+///left是左边的_index  right是右边的_index
+void ws_quickSorts(int *a, int left, int right)
+{
+    if (left >= right) { //如果大于或者等于说明已整理完了
+        return;
+    }
+    int i, j, key, temp;
+    i = left;
+    j = right;
+    
+    //获取到关键数据Key
+    key = a[left];
+    
+    while (i < j) {
+        //先从右向左 找到小余关键数据的index
+        while (a[j] >= key && j > i) {//当满足a[j] > key && j > i时一直执行
+            j--;
+        }
+        
+        //从又向左, 找到大于关键数据的index
+        while (a[i] <= key && i < j) {
+            i++;
+        }
+     
+        //交换位置
+        if (i < j) {
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+
+    }
+    
+    //将关键字放到中间
+    temp = a[i];
+    a[i] = key;
+    a[left] = temp;
+    
+    //处理左边的数据
+    ws_quickSorts(a, left, i - 1);
+    //处理右边的数据
+    ws_quickSorts(a, j + 1, right);
+    
+}
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
@@ -107,15 +103,21 @@ int main(int argc, const char * argv[]) {
         //
         scanf("%d",&n);
         
-        for ( i = 1; i <= n; i ++) {
+        for ( i = 0; i <= n; i ++) {
             scanf("%d", &a[i]);
         }
         
-        quicksorts(1, n);
-//        sort(a, 1, 6);
+        for (int j = 0; j <= n; j ++) {
+            printf("  %d", a[j]);
+        }
+
         
-        for (int i = 1; i <= n; i ++) {
-            printf("%d", a[i]);
+        ws_quickSorts(a, 0, i - 1);
+//        sort(a, a[1], a[i -1]);
+        
+        printf("\n");
+        for (int i = 0; i <= n; i ++) {
+            printf(" %d", a[i]);
         }
 
     }

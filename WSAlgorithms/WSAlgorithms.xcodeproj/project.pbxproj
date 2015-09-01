@@ -235,6 +235,7 @@
 				FE6427D61B935C550067405D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

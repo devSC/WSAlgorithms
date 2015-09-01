@@ -6,6 +6,8 @@
 //  Copyright (c) 2015年 wilson-yuan. All rights reserved.
 //
 #include <stdio.h>
+#include <string.h>
+
 
 int a[101], n; //
 
@@ -49,7 +51,7 @@ void sort(int *a, int left, int right)
 }
 
 
-///left是左边的_index  right是右边的_index
+///快速排序 left是左边的_index  right是右边的_index
 void ws_quickSorts(int *a, int left, int right)
 {
     if (left >= right) { //如果大于或者等于说明已整理完了
@@ -93,12 +95,40 @@ void ws_quickSorts(int *a, int left, int right)
     ws_quickSorts(a, j + 1, right);
     
 }
+
+///队列
+
+void ws_queue() {
+    int q[102] = {6,3,1,7,5,8,9,2,4}, head, tail;
+    //初始化队列
+    head = 0;
+    tail = 9;
+    
+    while (head < tail) {
+        
+        //打印出对队首
+        printf("%d", q[head]);
+        
+        //队首向前一位
+        head ++;
+        
+        //将现队首添加进队尾
+        q[tail] = q[head];
+        
+        //队尾+1
+        tail ++;
+        
+        //下一个队首.
+        head ++;
+    }
+    
+    getchar();
+}
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
-        
-        printf("Hello world");
-        
+        /*
+        //快速排序
         int i;
         //
         scanf("%d",&n);
@@ -119,9 +149,57 @@ int main(int argc, const char * argv[]) {
         for (int i = 0; i <= n; i ++) {
             printf(" %d", a[i]);
         }
+         
+         //出队
+         ws_queue();
+         */
 
+        
+        
+        char a[101], s[101];
+        
+        int i, len, mid, next, top;
+        
+        gets(a); //读入一行字符串
+//gets(<#char *#>)
+        scanf("%c", a);
+        
+        len = (int)strlen(a);
+        
+        mid = len/2 - 1;
+        
+        
+        top = 0;//栈的初始化
+
+        //将mid前的字符串依次入栈
+        for (i = 0; i <= mid; i ++) {
+            s[++top] = a[i];
+        }
+        
+        //判断字符串数组的奇偶数, 并找出需要进行字符串匹配的起始下标
+        
+        if (len % 2 ==0) {
+            next = mid + 1;
+        } else {
+            next = mid + 2;
+        }
+        
+        
+        //开始匹配
+        
+        for (i = next; i < len - 1; i ++) {
+            if (a[i] != s[top]) {
+                break;
+            }
+            top--;
+        }
+
+        //如果top为0 则说明每个数都检查过去了
+        if (top == 0) {
+            printf("YES");
+        } else {
+            printf("NO");
+        }
     }
-    
-    
     return 0;
 }
